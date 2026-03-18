@@ -1,0 +1,20 @@
+Sequential baseline
+time = 1.100598 s
+
+OpenMP static
+threads=1  time=1.097000 s  speedup=1.003
+threads=2  time=0.954000 s  speedup=1.154
+threads=4  time=1.026000 s  speedup=1.073
+threads=8  time=2.063000 s  speedup=0.533
+
+OpenMP dynamic
+threads=1  time=1.122000 s  speedup=0.981
+threads=2  time=0.922000 s  speedup=1.194
+threads=4  time=0.792000 s  speedup=1.390
+threads=8  time=2.261000 s  speedup=0.487
+
+pthreads
+threads=1  time=1.159646 s  speedup=0.949
+threads=2  time=0.604843 s  speedup=1.820
+threads=4  time=0.343306 s  speedup=3.206
+threads=8  time=0.210209 s  speedup=5.236

@@ -1,0 +1,7 @@
+The sequential wall-clock runtime was 1.100598 s.
+
+For OpenMP, the best result was obtained with dynamic scheduling and 4 threads, with a runtime of 0.792 s and a speedup of about 1.39x. Using 2 threads also improved runtime slightly, but 8 threads performed worse because the grid was small and threading overhead became dominant.
+
+For pthreads, performance improved more clearly as the number of threads increased. The best result was obtained with 8 threads, with a runtime of 0.210209 s and a speedup of about 5.24x over the sequential baseline.
+
+Performance did not scale linearly. OpenMP showed limited benefit on this small problem size, while pthreads achieved better scalability on the same machine. This suggests that thread management overhead and scheduling costs had a strong effect, especially for OpenMP at higher thread counts.
